@@ -1,4 +1,4 @@
-// SAST #1: SQL Injectio
+// SAST #1: SQL Injection
 const userId = req.query.id;
 const query = `SELECT * FROM users WHERE id = ${userId}`; // UNSAFE!
 db.query(query);
